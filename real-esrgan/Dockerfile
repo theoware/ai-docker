@@ -11,12 +11,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV BASE_DIR="/"
 ENV INSTALL_DIR="${BASE_DIR}Real-ESRGAN/"
 
-# Build variables
-ARG GIT_REPO
-
 # Download Stable Diffusion git repo.
 WORKDIR $BASE_DIR
-RUN git clone --depth=1 "${GIT_REPO}"
+RUN git clone --depth=1 https://github.com/xinntao/Real-ESRGAN.git
 
 # Install requirements and setup.
 WORKDIR $INSTALL_DIR
