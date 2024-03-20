@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM wpafbo79/cuda-with-prereqs:latest
+FROM theoware/cuda-with-prereqs:latest
 
 SHELL ["/bin/bash", "--login", "-c"]
 
