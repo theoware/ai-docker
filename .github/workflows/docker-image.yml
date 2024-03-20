@@ -55,6 +55,8 @@ jobs:
 
     - name: Build and push
       uses: docker/build-push-action@v5
+      env:
+        GIT_REPO: https://github.com/xinntao/Real-ESRGAN.git
       with:
         push: true
         tags: theoware/real-esrgan:latest
