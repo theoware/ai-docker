@@ -18,7 +18,7 @@ RUN git clone --depth=1 https://github.com/xinntao/Real-ESRGAN.git
 # Install requirements and setup.
 WORKDIR $INSTALL_DIR
 RUN pip install --upgrade pip setuptools wheel
-RUN pip install basicsr
+RUN pip install --use-pep517 basicsr
 RUN pip install facexlib
 RUN pip install gfpgan
 RUN pip install -r requirements.txt
